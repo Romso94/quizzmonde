@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import React, { useState} from 'react';
 import './App.css';
+import EndScreen from './components/EndScreen';
+import MainMenu from './components/MainMenu';
+import Quizz from './components/Quizz';
+import { QuizzContext } from './Helpers/Context';
+
 
 function App() {
+
+
+
+  const [gameState, setGameState] = useState("menu");
+  const [score, setScore] = useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='Title'>Quiz sur les drapeaux du monde !</h1>
+      
+    <div className='card'>
+      <QuizzContext.Provider value={{gameState, setGameState, score, setScore}}>
+          {gameState==="menu" && <MainMenu/>}
+          {gameState==="quizz" && <Quizz/>}
+          {gameState==="endscreen" && <EndScreen/>}
+      </QuizzContext.Provider>
+      
+    </div>
+    <br></br>
+      
+
+
+
+
+
+
     </div>
   );
 }

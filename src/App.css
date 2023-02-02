@@ -1,38 +1,152 @@
-.App {
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+.App{
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  display: flex;
+
+}
+body{
+  background: #212534;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Title{
+  color:whitesmoke;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Menu, .Quizz, .EndScreen, .card{
+  width: 700px;
+  height: 680px;
+  border-radius: 10px;
+  background-color: #191c29;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.card::before{
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 10s linear infinite;
+
+}
+
+.card::after{
+  position: absolute;
+  content: "";
+  top: calc(var(600) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(600) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 10s linear infinite;
+}
+
+
+.Menu, .Quizz,.EndScreen{
+  color : white;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+
+.next button{
+  width: 300px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+
+  border-radius: 10px;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #2949bf;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover{
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: grid;
+}
+
+.drapeau{
+
+  width: 500px;
+  height: 300px;
+}
+
+.reponse{
+  width: 300px;
+  height: 30px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.valid{
+  width: 200px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2949bf;
+  color: white;
 }

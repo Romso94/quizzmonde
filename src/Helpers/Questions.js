@@ -1,15 +1,68 @@
 export const Questions = [
-    {
-        prompt :"https://www.countryflags.com/wp-content/uploads/france-flag-png-large.png",
-        answer:"france",
-    },
-    {
-        prompt :"https://www.countryflags.com/wp-content/uploads/france-flag-png-large.png",
-        answer:"france",
-    },
-    {
-        prompt :"https://www.countryflags.com/wp-content/uploads/china-flag-png-large.png",
-        answer:"chine",
-    },
-    
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/europe-flag-jpg-xl.jpg',
+     answer:'europe',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/mexico-flag-png-large.png',
+     answer:'mexique',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/turkey-flag-png-large.png',
+     answer:'turquie',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/italy-flag-png-large.png',
+     answer:'italie',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/tanzania-flag-png-large.png',
+     answer:'tanzanie',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/spain-flag-png-large.png',
+     answer:'espagne',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/uganda-flag-png-large.png',
+     answer:'ouganda',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/syria-flag-png-large.png',
+     answer:'syrie',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/netherlands-flag-png-large.png',
+     answer:'pays-bas',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/flag-jpg-xl-18-scaled.jpg',
+     answer:'belgique',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/greece-flag-png-large.png',
+     answer:'grèce',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/finland-flag-png-large.png',
+     answer:'finlande',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/turkmenistan-flag-png-large.png',
+     answer:'turkménistan',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/norway-flag-png-large.png',
+     answer:'norvège',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/flag-jpg-xl-22-scaled.jpg',
+     answer:'bosnie-herzégovine',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/mongolia-flag-png-large.png',
+     answer:'mongolie',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/flag-jpg-xl-8-scaled.jpg',
+     answer:'arménie',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/flag-jpg-xl-23-scaled.jpg',
+     answer:'botswana',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/gambia-flag-png-large.png',
+     answer:'gambie',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/iceland-flag-png-large.png',
+     answer:'islande',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/aruba-flag-jpg-xl.jpg',
+     answer:'aruba',},
+{
+      prompt:'https://www.countryflags.com/wp-content/uploads/tuvalu-flag-png-large.png',
+     answer:'tuvalu',},
 ];

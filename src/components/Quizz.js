@@ -1,28 +1,36 @@
 import React, {useState, useContext} from 'react';
-import {Questions} from "../Helpers/Questions";
+import { Questions } from '../Helpers/Questions';
+
 import { QuizzContext } from '../Helpers/Context';
-import {useRef} from 'react';
-import { createPortal } from 'react-dom';
+
 
 
  function Quizz() {
+    
 
     const { score,setScore,  setGameState } = useContext(QuizzContext);
-    const inputRef = useRef(null);
+    
+   
     var Answer = "";
     var res = "";
     
     const [currQuestion, setCurrquestion] = useState(0);
     const [response, setResponse]=useState("");
+   
     
 
+     
+    
+    
+    
+    
    
     
     
     const nextQuestion = () => {
         Answer = response;
         res = Answer.toLowerCase();
-        console.log(res);
+        // console.log(res);
        
         
         if (response == ""){
@@ -31,7 +39,7 @@ import { createPortal } from 'react-dom';
         else{
             setResponse("");
            
-            if (res == Questions[currQuestion].answer){
+            if (res === Questions[currQuestion].answer){
                 console.log("Bonne réponse");
                 setScore(score + 1);
                 
@@ -64,7 +72,7 @@ import { createPortal } from 'react-dom';
 
   return (
     <div className="Quizz">
-        <h1>A quel pays appartient ce drapeau ?</h1>
+        <h1>Quel est ce drapeau ?</h1>
         <br></br>
         <img className='drapeau' src={Questions[currQuestion].prompt} />
         <br></br>
@@ -72,6 +80,7 @@ import { createPortal } from 'react-dom';
         <input type="text" className='reponse' placeholder="Entrez le nom du pays" name="reponse" onChange={handleChange} id='myInput' />
         <br></br>
         <br></br>
+       
         
         {currQuestion == Questions.length -1 ? (
             <button className='valid' onClick={finirQuizz}> Finir le quizz</button>
@@ -86,3 +95,5 @@ import { createPortal } from 'react-dom';
 }
 
 export default Quizz;
+
+

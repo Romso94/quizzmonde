@@ -12,6 +12,8 @@ function App() {
 
   const [gameState, setGameState] = useState("menu");
   const [score, setScore] = useState(0);
+  const [difficulty, setDifficulty] = useState("");
+  
 
   return (
     <div className="App">
@@ -23,6 +25,7 @@ function App() {
           {gameState==="quizz" && <Quizz/>}
           {gameState==="endscreen" && <EndScreen/>}
       </QuizzContext.Provider>
+     
       
     </div>
     <br></br>

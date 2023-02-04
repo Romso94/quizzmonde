@@ -2,7 +2,7 @@
 
 ## objectif : Quizz sur les drapeaux du monde
 
-Y'a un fichier surprise qui normalement n'a pas a etre la :)  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+Y'a un fichier surprise qui normalement n'a pas à être la :)  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
 
 
 https://superso6.github.io/quizzmonde/

@@ -86,7 +86,7 @@ import { QuizzContext } from '../Helpers/Context';
             <button className='valid' onClick={finirQuizz}> Finir le quizz</button>
          ):
          (
-            <button className='valid' onClick={nextQuestion}>Valider</button>
+            <button className='valid' onClick={nextQuestion}>Suivant</button>
          )}
         
         
